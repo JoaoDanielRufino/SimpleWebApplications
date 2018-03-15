@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Fontes e cores</title>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+
+            p{
+                font-size: 30px;
+                font-family: "Georgia";
+            }
+
+            .texto{
+                font-size: 25px;/*Possivel utilizar: px, %, em*/
+            }
+
+            .negrito{
+                font-weight: bold;/*100 ate 900*/
+            }
+
+            .estilo{
+                font-style: oblique;
+            }
+
+            .textoPadrao{
+                font: bold 40px "Georgia";
+            }
+
+            .formatacao{
+                text-decoration: line-through;/*underline, overline, line-through*/
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <p class="texto">Lorem ipsum <span class="formatacao">dolor</span> sit amet, consectetur adipiscing elit.</p>
+        <p class="negrito">Conteudo 1</p>
+        <p class="estilo">Conteudo 2</p>
+        <p class="textoPadrao">Conteudo 3</p>
+    </body>
+
+</html>
