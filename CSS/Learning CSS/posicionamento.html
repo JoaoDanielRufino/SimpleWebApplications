@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Posicionamento</title>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+
+            body{
+                background: #61bd8c;
+                padding: 10px;
+            }
+
+            #conteudo_principal{
+                background: #FFFFFF;
+                padding: 10px;
+                width: 600px;
+                margin: 300px auto;
+            }
+
+            .caixa{
+                background: #1e6f44;
+                width: 100px;
+                height: 50px;
+                color: #FFFFFF;
+            }
+
+            #relativo{
+                position: relative;
+                left: -30px;
+                width: 660px;
+            }
+
+            #absoluta{
+                position: absolute;/*Seu parente sera o que possuir o atributo *position* mais proximo*/
+                bottom: 0;
+                left: 0;
+            }
+
+            #fixo{
+                position: fixed;/*Seu parente sera a tela. Ao movimentar a tela(utilizando o scroll) ele fica parado*/
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="conteudo_principal">
+            <h1>Posicionamento</h1>
+
+            <h4>Relative</h4>
+            <div id="relativo" class="caixa">Relative</div>
+
+            <h4>Absolute</h4>
+            <div id="absoluta" class="caixa">Absolute</div>
+
+            <h4>Fixed</h4>
+            <div id="fixo" class="caixa">Fixed</div>
+        </div>
+    </body>
+
+</html>
