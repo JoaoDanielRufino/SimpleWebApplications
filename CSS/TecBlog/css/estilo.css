@@ -1,0 +1,95 @@
+/*Limpando as formatacoes padrao*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #f3f3f3;
+}
+
+h2{
+    color: #b9c941;
+}
+
+#navegacao{
+    background: #FFFFFF;
+    border-bottom: 1px solid #d8d8d8;
+    height: 45px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#area{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#area_principal{
+    width: 1000px;
+    margin: 55px auto 10px auto;
+}
+
+#menu{
+    float: right;
+    padding: 10px 0px;
+}
+
+#logo{
+    float: left;
+}
+
+#postagem{
+    background: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.verde{
+    color: #b9c941;
+}
+
+.data_postagem{
+    font-size: 14px;
+    border-bottom: 1px solid gray;
+    display: block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.img_postagem{
+    float: left;
+    margin: 0 10px 5px 0;
+}
+
+.postado{
+    border-left: 5px solid #d8d8d8;
+    padding-left: 5px;
+    display: block;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+a:link{
+    color: #838383;
+}
+
+a:visited{
+    color: #838383;
+}
+
+a:hover{
+    color: #FFFFFF;
+    background: #b9c941;
+}
+
+a:active{
+    color: #535353;
+}
