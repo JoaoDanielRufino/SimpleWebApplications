@@ -1,0 +1,35 @@
+#box{
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 20px;
+    border-radius: 20px;
+    /*webkit para o versoes anterios do google e moz para o mozilla*/
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    /*O padding sera somado ao tamanho da caixa, utilizando o box-sizing, isso nao ocorrera mais*/
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/*#box2{
+    width: 300px;
+    height: 300px;
+    background: url("../img/camera.png");
+}
+
+#box2 h1{
+    background: rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid #FFF;
+}*/
+
+#box2{
+    width: 300px;
+    height: 300px;
+    /*Degrade linear*/
+    /*background: linear-gradient(70deg, blue, green);*/
+    
+    /*Degrade radial*/
+    background: radial-gradient(blue, green, red);
+}
