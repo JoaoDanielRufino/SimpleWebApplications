@@ -1,0 +1,17 @@
+#box{
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    padding: 8px;
+    background-color: #009670;
+    /*box-shadow: 4px 4px 5px 2px black;*/
+    box-shadow: 4px 4px 5px 2px black, -4px -4px 5px 2px red ;
+}
+
+#box h1{
+    color: white;
+    font-size: 60px;
+    /*text-shadow: 10px 10px 5px black;*/
+    /*text-shadow: 10px 10px rgba(0, 0, 0, 0.5);*/
+    text-shadow: 4px 4px black;
+}
