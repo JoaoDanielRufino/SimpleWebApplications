@@ -1,3 +1,42 @@
+html, body, .capa{
+  height: 100%;
+}
+
+body{
+  background: url('imagens/capa.png'), url('imagens/ruido.png'), -webkit-linear-gradient(50deg, #ff4169, #7c26f8);
+  background-attachment: fixed;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1{
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin-bottom: 50px;
+}
+
+h2{
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+h3{
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+p{
+  font-weight: 550;
+}
+
+footer{
+  background: #000;
+  padding: 50px 0px 20px 0px;
+  position: relative;
+}
+
 .img-logo{
   height: 40px;
   width: 132px;
@@ -25,7 +64,87 @@
   color: white !important;
 }
 
+.nav .nav-link{
+  color: white !important;
+}
+
 /*Mudando a cor do estado hover*/
 .nav-item:hover .nav-link{
   color: #9bf0e1 !important;
+}
+
+.capa{
+  display: table;
+  width: 100%;
+}
+
+.texto-capa{
+  text-align: center;
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.btn-custom{
+  color: white;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  margin: 0px 15px;
+  transition: background 0.6s, color 0.6s;
+}
+
+.btn-azul{
+  background: #7c25f8;
+}
+
+.btn-azul:hover{
+  background: #6207e3;
+  color: white;
+}
+
+.btn-branco{
+  border: 2px solid white;
+}
+
+.btn-branco:hover{
+  background: white;
+  color: black;
+}
+
+.albuns{
+  padding: 10px 0px 10px 0px;
+}
+
+.rotacionar{
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  margin-left: 80px;
+}
+
+#servicos{
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#servicos h2, #servicos h3{
+  color: #7c25f8;
+}
+
+#recursos{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+#recursos h3{
+  color: #9bf0e1;
+}
+
+#rodape h4{
+  color: #919496;
+  font-size: 12px;
+  text-transform: uppercase;
 }
