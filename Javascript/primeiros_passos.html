@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Primeiros Passos</title>
+
+    <script type="text/javascript">
+      var texto = "Esse eh o texto 1";
+      var fracao = 5.2;
+      var inteiro = 3;
+      var booleano = true;
+      //var texto2 = prompt('Digite o seu nome: ');
+      //var num1 = prompt('Digite um valor: ');
+      //num1 = parseInt(num1);
+      //num1 = parseFloat(num1);
+
+      //document.write("Bem vindo " + texto2);
+
+      //var list = Array("Uva", "Morango");
+      var list = Array();
+      list[0] = "Uva";
+      list[1] = "Morango";
+
+      var lista_coisas = Array();
+      lista_coisas['frutas'] = Array();
+      lista_coisas['frutas'][0] = 'Banana';
+      lista_coisas['frutas'][1] = 'Morango';
+
+      lista_coisas['pessoas'] = Array();
+      lista_coisas['pessoas'][0] = 'Joao';
+      lista_coisas['pessoas'][1] = 'Pedro';
+
+      //document.write(lista_coisas['pessoas'][0] + ' gosta de ' + lista_coisas['frutas'][1])
+
+      function calculaArea(largura, comprimento){
+        largura = parseFloat(largura);
+        comprimento = parseFloat(comprimento);
+
+        var area = largura * comprimento;
+        return area;
+      }
+
+      var largura = prompt("Digite a largura do terreno: ");
+      var comprimento = prompt("Digite o comprimento do terreno: ");
+
+      document.write("O terreno possui " + calculaArea(largura, comprimento) + " metros");
+
+    </script>
+  </head>
+
+  <body>
+
+  </body>
+
+</html>
