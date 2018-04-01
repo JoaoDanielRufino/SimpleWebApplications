@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Eventos</title>
+
+		<!-- jquery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+		<script type="text/javascript">
+
+      $(document).ready(function(){
+        /*$('#div1').click(function(){
+          alert('Click');
+        });*/
+
+        /*$('#div1').dblclick(function(){
+          alert('Bdlclick');
+        });*/
+
+        /*$('#div1').mousedown(function(){
+          alert('Mousedown');
+        });*/
+
+        /*$('#div1').mouseover(function(){
+          alert('Sobrposto');
+        });*/
+
+        $('#div1').mouseout(function(){
+          alert('Saiu');
+        });
+      });
+
+		</script>
+	</head>
+
+	<body>
+
+    <div id="div1" style="height: 150px; width: 150px; background: gray"></div>
+
+	</body>
+</html>

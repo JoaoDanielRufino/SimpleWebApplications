@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Eventos</title>
+
+		<!-- jquery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+		<script type="text/javascript">
+
+      $(document).ready(function(){
+        /*$('#input1').keydown(function(){
+          alert('Tecla precionada');
+        });*/
+
+        $('#input1').keypress(function(){
+          alert('Tecla precionada');
+        });
+
+        /*$('#input1').keyup(function(){
+          alert('Tecla soltada');
+        });*/
+      });
+
+		</script>
+	</head>
+
+	<body>
+
+    <input id="input1" type="text"/>
+
+	</body>
+</html>

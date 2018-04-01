@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Eventos</title>
+
+		<!-- jquery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+		<script type="text/javascript">
+
+      $(document).ready(function(){
+        /*$('#input1').focus(function(){
+          alert('Focou');
+        });*/
+
+        /*$('#input1').blur(function(){
+          alert('Desfocou');
+        });*/
+
+        $('#select1').change(function(){
+          alert('Modificou');
+        });
+      });
+
+		</script>
+	</head>
+
+	<body>
+
+    <!-- <input id="input1" type="text"/> -->
+
+    <select id="select1">
+      <option value="1">Primeira opcao</option>
+      <option value="2">Segunda opcao</option>
+    </select>
+
+	</body>
+</html>
