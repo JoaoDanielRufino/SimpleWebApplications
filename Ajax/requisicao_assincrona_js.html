@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Ajax com js puro</title>
+
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <script language="javascript">
+
+      var httpRequest;
+
+      function fazerRequisicao(url){
+
+        document.getElementById('div_conteudo').innerHTML = '<center><img src="loader.gif"></center>';
+
+        if(window.XMLHttpRequest){
+          httpRequest = new XMLHttpRequest();
+        }
+        //Versoes mais antigas
+        else if(window.ActiveXObject){
+          try{
+            httpRequest = new ActiveXObject("Msxm12.XMLHTTP");
+          }
+          catch(e){
+            try{
+              httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            catch(e){
+              alert("Impossivel fazer requisicoes assincronas para esse navegador/versao");
+            }
+          }
+        }
+
+        if(!httpRequest){
+          alert("Erro ao tentar criar o objeto XMLHttp");
+          return false;
+        }
+
+        httpRequest.onreadystatechange = situacaoRequisicao;
+
+        httpRequest.open('GET', url);
+        httpRequest.send();
+
+      }
+
+      function situacaoRequisicao(){
+        //Requisicao concluida
+        if(httpRequest.readyState == 4){
+          //Retorno de sucesso do servidor
+          if(httpRequest.status == 200){
+            document.getElementById('div_conteudo').innerHTML = httpRequest.responseText;
+          }
+        }
+      }
+
+    </script>
+
+	</head>
+
+	<body>
+
+		<!-- Static navbar -->
+	    <nav class="navbar navbar-default navbar-static-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	        	<h3>Requisições síncronas e assíncronas</h3>
+	        </div>
+	      </div>
+	    </nav>
+
+
+	    <div class="container">
+
+	    	<div class="row">
+	    		<div class="col-md-4 center"></div>
+	    		<div class="col-md-4 center">
+	    			<a href="#" class="btn btn-primary" onclick="fazerRequisicao('pagina_1_conteudo.html')">Página 1</a>
+	    			<a href="#" class="btn btn-primary" onclick="fazerRequisicao('pagina_2_conteudo.html')">Página 2</a>
+	    			<a href="#" class="btn btn-primary" onclick="fazerRequisicao('pagina_3_conteudo.html')">Página 3</a>
+	    		</div>
+	    		<div class="col-md-4 center"></div>
+	    	</div>
+
+        <br />
+        <div class="row">
+          <div class="col-md-1"></div>
+
+          <div class="col-md-10" id="div_conteudo"></div>
+
+          <div class="col-md-1"></div>
+        </div>
+
+		</div>
+	</body>
+</html>
